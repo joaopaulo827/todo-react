@@ -32,7 +32,7 @@ export default function ListaDeTarefas(){
             <FormTarefa aoAdicionar={adicionar}/>
         <ul>
         {tarefas.map((tarefa)=>(
-            <TarefasItem key={tarefa.id} tarefa={tarefa} aoConcluir={concluir}/>
+            <TarefasItem key={tarefa.id} tarefa={tarefa} aoConcluir={concluir} aoExcluir={excluir}/>
         ))}
         </ul>
         </section>

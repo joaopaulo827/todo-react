@@ -7,7 +7,7 @@ export default function TarefasItem({tarefa, aoConcluir, aoExcluir}){
             />
             <span>{tarefa.descricao}</span>
             <button type="button" className="botao-secundario" 
-            onClick={()=> aoExcluir(tarefa.id)}>
+            onClick={()=>aoExcluir(tarefa.id)}>
              Excluir
             </button>
         </label>
