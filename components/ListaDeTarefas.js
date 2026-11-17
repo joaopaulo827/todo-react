@@ -23,6 +23,10 @@ export default function ListaDeTarefas(){
         setTarefas([...tarefas,nova])
     }
 
+    const excluir=(id)=>{
+        setTarefas(
+            tarefas.filter((tarefa)=> tarefa.id !== id))
+    }
     return(
         <section>
             <FormTarefa aoAdicionar={adicionar}/>
