@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import { tarefasIniciais } from "./dados";
+import { tarefasIniciais } from "@/dados/tarefas";
 import TarefasItem from "./tarefasItem";
 import FormTarefa from "./FormTarefa";
 
@@ -34,7 +34,7 @@ export default function ListaDeTarefas(){
         setTarefas(
             tarefas.map((tarefa)=>
             tarefa.id===id?
-            { ...tarefa, descricao: descricao}: 
+            { ...tarefa,descricao: descricao}: 
             tarefa
         )
         )
