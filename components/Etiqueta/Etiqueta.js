@@ -1,0 +1,1 @@
+<span className={`${styles.etiqueta} ${styles[prioridade]}`}></span>

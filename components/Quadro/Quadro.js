@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import { tarefasIniciais } from "@/dados/tarefas";
-import TarefasItem from "./tarefasItem";
-import FormTarefa from "./FormTarefa";
+import FormTarefa from "../FormTarefa";
 
 
 export default function ListaDeTarefas(){
@@ -86,13 +85,6 @@ export default function ListaDeTarefas(){
          <p className="vazio">Nenhuma tarefa por aqui.</p>   
         ) : (
         <ul>
-        {tarefasFiltras.map((tarefa)=>(
-            <TarefasItem key={tarefa.id} 
-            tarefa={tarefa} 
-            aoConcluir={concluir} 
-            aoExcluir={excluir}
-            aoEditar={editar}/>
-        ))}
         </ul>        
         ) }
         <div className="resumo">
@@ -103,6 +95,7 @@ export default function ListaDeTarefas(){
              Limpar Concluidas
             </button>
         </div>
+        
         </section>
     )
 }

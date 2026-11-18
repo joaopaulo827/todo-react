@@ -1,5 +1,5 @@
 import Cabecalho from "@/components/Cabecalho/Cabecalho";
-import ListaDeTarefas from "@/components/ListaDeTarefas";
+import ListaDeTarefas from "@/components/Quadro/Quadro";
 
 export default function Home() {
   return (

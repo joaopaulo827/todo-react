@@ -1,0 +1,8 @@
+:root {
+    --cor-principal: #E07A2E;
+    --cor-perigo: #C62828;
+    --cor-ok: #2E7D32;
+  }
+.alta{background-color: var(--cor-perigo);}
+.media{background-color: var(--cor-principal);}
+.baixa{background-color: var(--cor-ok);}
